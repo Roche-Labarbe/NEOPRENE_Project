@@ -44,7 +44,7 @@ for diri=1:num_files
     %% average electrodes by ROI
 
     LeftS1ROI={'FC3','FC5','C3','C5','E35','E39','E40','FT7'}; LeftS1data=[];
-    RightS1ROI={'FC4','FC4','C4','C6','E110','E109','115','FT8'}; RightS1data=[];
+    RightS1ROI={'FC4','FC6','C4','C6','E110','E109','115','FT8'}; RightS1data=[];
     LeftFrontalROI={'AF3','F1','F3','F5','E18','E20','AF7','FP1'}; LeftFrontaldata=[];
     RightFrontalROI={'AF4','F2','F4','F6','E10','E118','AF8','FP2'}; RightFrontaldata=[];
 
