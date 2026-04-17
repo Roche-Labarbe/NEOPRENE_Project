@@ -100,10 +100,10 @@ for diri=1:num_files
     avgIpsiFrontalERP=nanmean(IpsiFrontalERP,2); avgContraFrontalERP=nanmean(ContraFrontalERP,2);
 
     % Reject individual average ERPs when any value is above threshold
-    if any(abs(avgContraFrontalERP))>avgthreshold, avgContraFrontalERP(:)=NaN; end 
-    if any(abs(avgContraS1ERP))>avgthreshold, avgContraS1ERP(:)=NaN; end 
-    if any(abs(avgIpsiFrontalERP))>avgthreshold, avgIpsiFrontalERP(:)=NaN; end 
-    if any(abs(avgIpsiS1ERP))>avgthreshold, avgIpsiS1ERP(:)=NaN; end
+    if any(abs(avgContraFrontalERP)>avgthreshold), avgContraFrontalERP(:)=NaN; end 
+    if any(abs(avgContraS1ERP)>avgthreshold), avgContraS1ERP(:)=NaN; end 
+    if any(abs(avgIpsiFrontalERP)>avgthreshold), avgIpsiFrontalERP(:)=NaN; end 
+    if any(abs(avgIpsiS1ERP)>avgthreshold), avgIpsiS1ERP(:)=NaN; end
 
     %% save ERPs by condition
 
